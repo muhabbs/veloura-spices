@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veloura Spice | Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav-bar">
+    <div class="logo">Veloura Spice</div>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="cart-btn" aria-label="Cart">
+        <i class="fa-solid fa-cart-shopping"></i><span class="cart-count" data-cart-count id="cart-count">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="section" id="products">
+    <div class="section-heading">
+      <p class="eyebrow">Veloura Collection</p>
+      <h2>Signature Blends</h2>
+      <p>Three polished pantry jars crafted for Alexandria kitchens, oven trays, and charcoal grill days.</p>
+    </div>
+    <div class="store-points store-points-centered">
+      <span>Small-batch Alexandria packing</span>
+      <span>250g luxury jars</span>
+      <span>Delivery only inside Alexandria</span>
+    </div>
+    <div class="products-grid" id="product-grid" data-product-grid></div>
+    <div class="shop-support">
+      <div>
+        <h3>Need help choosing?</h3>
+        <p>Use the product pages for ingredients and flavor notes, or chat with us on WhatsApp for bundle help.</p>
+      </div>
+      <a class="btn primary" href="https://wa.me/201000000000?text=Hello%20Veloura%2C%20I%20need%20help%20choosing%20a%20blend." target="_blank" rel="noreferrer">WhatsApp Support</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="logo">Veloura Spice</div>
+        <p>Luxury spice jars packed in Egypt for clean flavor, elegant shelves, and dependable everyday cooking.</p>
+        <div class="payments" aria-label="Payment methods">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <a class="payment-chip" href="https://www.instapay.eg/" target="_blank" rel="noreferrer">InstaPay</a>
+          <span class="payment-chip">Cash on Delivery</span>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="social">
+          <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Veloura Spice. All rights reserved.</p>
+  </footer>
+
+  <div class="cart-drawer" id="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="icon-btn" id="close-cart" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-summary">
+      <div class="cart-total"><span>Total</span><strong id="cart-total">0 ج.م</strong></div>
+      <p class="cart-note" id="login-note">Guest checkout is available. We collect your Alexandria address at checkout.</p>
+      <button class="btn primary" id="checkout-btn">Go to Checkout</button>
+    </div>
+  </div>
+  <div class="backdrop" id="backdrop"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

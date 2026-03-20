@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veloura Spice | Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav-bar">
+    <div class="logo">Veloura Spice</div>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="icon-btn" href="cart.html" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" data-cart-count>0</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="section-heading" style="text-align:left;max-width:980px;">
+      <p class="eyebrow">Checkout</p>
+      <h2>Finish your order with delivery details.</h2>
+      <p>Enter your information, choose a payment method, and we will prepare your order for Alexandria delivery.</p>
+    </div>
+
+    <div class="checkout-layout">
+      <form id="checkout-form" class="checkout-card">
+        <div class="checkout-grid">
+          <label>
+            First Name
+            <input type="text" name="firstName" placeholder="First name" required>
+          </label>
+          <label>
+            Last Name
+            <input type="text" name="lastName" placeholder="Last name" required>
+          </label>
+          <label>
+            Phone Number
+            <input type="tel" name="phone" placeholder="01XXXXXXXXX" required>
+          </label>
+          <label>
+            Email (Optional)
+            <input type="email" name="email" placeholder="Optional">
+          </label>
+          <label>
+            Delivery Zone
+            <select name="city" required>
+              <option value="">Select zone</option>
+              <option>Smouha</option>
+              <option>Sidi Gaber</option>
+              <option>Gleem</option>
+              <option>Stanley</option>
+              <option>Miami</option>
+              <option>Mandara</option>
+            </select>
+          </label>
+          <label class="full-span">
+            Address
+            <input type="text" name="address" placeholder="Building, street, floor, apartment" required>
+          </label>
+          <label class="full-span">
+            Delivery Notes
+            <textarea name="notes" rows="4" placeholder="Optional notes for delivery or gifting"></textarea>
+          </label>
+        </div>
+
+        <div class="payment-options">
+          <p class="payment-label">Choose payment method</p>
+          <label class="payment-option"><input type="radio" name="payment" value="Cash on Delivery" checked> Cash on Delivery</label>
+          <label class="payment-option"><input type="radio" name="payment" value="InstaPay"> InstaPay <a href="https://www.instapay.eg/" target="_blank" rel="noreferrer">Open InstaPay</a></label>
+          <label class="payment-option"><input type="radio" name="payment" value="Visa / Mastercard"> Visa / Mastercard</label>
+        </div>
+
+        <p class="auth-copy" id="checkout-auth-note">No login is needed. Choose InstaPay if you want the official InstaPay page to open in a new tab after placing the order.</p>
+        <button class="btn primary" type="submit">Place Order</button>
+      </form>
+
+      <aside class="checkout-card">
+        <div class="checkout-summary-head">
+          <h3>Order Summary</h3>
+          <a href="cart.html">Edit cart</a>
+        </div>
+        <div id="checkout-items" class="checkout-items"></div>
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="checkout-total">0 &#1580;.&#1605;</strong>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="logo">Veloura Spice</div>
+        <p>Luxury spice jars packed in Egypt for clean flavor, elegant shelves, and dependable everyday cooking.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="products.html">Products</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="cart.html">Cart</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="social">
+          <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Veloura Spice. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

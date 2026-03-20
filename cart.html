@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veloura Spice | Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav-bar">
+    <div class="logo">Veloura Spice</div>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="icon-btn" href="cart.html" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" data-cart-count>0</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="section" id="cart-page">
+    <div class="section-heading" style="text-align:left; max-width:780px; margin:0 auto 24px;">
+      <h2>Your Cart</h2>
+      <p>Review your order before checkout. Add quantities here, then continue as a guest with your Alexandria address and phone details.</p>
+    </div>
+    <div class="cart-page" id="cart-page-wrapper">
+      <div id="cart-page-items" class="cart-page-items"></div>
+      <div class="cart-page-summary">
+        <div class="cart-total"><span>Subtotal</span><strong id="cart-page-total">0 ج.م</strong></div>
+        <p class="cart-note" id="cart-page-note">Guest checkout is available. We collect your Alexandria address on the next step.</p>
+        <p class="summary-copy">Accepted payment options include Visa, Mastercard, InstaPay, and cash on delivery.</p>
+        <button class="btn primary" id="cart-checkout-btn" disabled>Continue to Checkout</button>
+        <a class="btn ghost" href="products.html" style="margin-top:10px; text-align:center;">Keep Shopping</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="logo">Veloura Spice</div>
+        <p>Luxury spice jars packed in Egypt for clean flavor, elegant shelves, and dependable home cooking.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="products.html">Products</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="social">
+          <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-note">Delivery confirmation is handled locally so your order timing stays clear and practical.</p>
+    <p class="copyright">© 2026 Veloura Spice. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
